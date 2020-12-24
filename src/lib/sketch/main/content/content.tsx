@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-import { headerContentContext } from '../../../hooks';
+import { useContentHeaderContext } from '../../../hooks';
 
 import ContentHeader from '../../../components/content/header';
 import ContentBody from '../../../components/content/body';
@@ -22,7 +22,7 @@ const SectionContent = styled.div`
 
 const Content: FC = () => {
     // get the context data from provider
-    const { context } = headerContentContext();
+    const { context } = useContentHeaderContext();
 
     return (
         <SectionContent className="section-content section-packages container section-pad-r">

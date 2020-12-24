@@ -8,6 +8,6 @@ export const ContentHeaderContext = createContext({
 });
 
 
-export const headerContentContext = () => {
+export const useContentHeaderContext = () => {
     return useContext(ContentHeaderContext);
 }

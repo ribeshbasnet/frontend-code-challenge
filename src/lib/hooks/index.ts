@@ -1,1 +1,1 @@
-export { ContentHeaderContext, headerContentContext} from './header_content';
+export { ContentHeaderContext, useContentHeaderContext} from './header_content';

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-import { headerContentContext } from '../../../hooks';
+import { useContentHeaderContext } from '../../../hooks';
 
 import { stripTags } from '../../../utils';
 
@@ -21,7 +21,7 @@ const SectionDescription = styled.div`
 `;
 
 const ContentHeader: FC = () => {
-    const { title, description } = headerContentContext();
+    const { title, description } = useContentHeaderContext();
     return (
         <div className="inner-section-head">
             <SectionTitle className="package-section-title">
