@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 
 import { AppNavigation, NavList } from './navigation.styled';
-import NavItem from '../../components/list/nav-item';
+import NavItem from '../../../components/list/nav-item';
 
 // Type for nav item
 type NavItemProps = {
