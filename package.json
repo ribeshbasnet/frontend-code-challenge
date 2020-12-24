@@ -2,6 +2,9 @@
   "name": "frontend-code-challenge",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "6.11.1"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
