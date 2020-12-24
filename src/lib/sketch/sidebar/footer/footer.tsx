@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
-import { ReactComponent as RightArrowSVG } from 'assets/svg/right-arrow.svg';
-import { ReactComponent as CallSVG } from 'assets/svg/call.svg';
-import { ReactComponent as MailSVG } from 'assets/svg/mail.svg';
-import { ReactComponent as ChatSVG } from 'assets/svg/chat.svg';
+import { ReactComponent as RightArrowSVG } from '../../../../assets/svg/right-arrow.svg';
+import { ReactComponent as CallSVG } from '../../../../assets/svg/call.svg';
+import { ReactComponent as MailSVG } from '../../../../assets/svg/mail.svg';
+import { ReactComponent as ChatSVG } from '../../../../assets/svg/chat.svg';
 
 import {
     AppFooter,

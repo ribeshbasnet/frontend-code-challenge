@@ -1,1 +1,1 @@
-export { default } from './package-list';
+export { default } from './pacakage-list';

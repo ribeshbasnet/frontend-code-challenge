@@ -11,7 +11,7 @@ import {
     PackagePriceTitle,
     PackagePriceAmount,
 } from './gym-package.styled';
-import { ReactComponent as PlaneSVG } from 'assets/svg/plane.svg';
+import { ReactComponent as PlaneSVG } from '../../../../assets/svg/plane.svg';
 
 const GymPackageItem: FC<PackageItem> = ({
     title,

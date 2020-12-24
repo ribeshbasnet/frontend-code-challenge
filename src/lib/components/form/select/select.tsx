@@ -9,7 +9,7 @@ import {
     FormSelectItem,
 } from './select.styled';
 
-import { ReactComponent as DownArrowSVG } from 'assets/svg/down-arrow.svg';
+import { ReactComponent as DownArrowSVG } from '../../../../assets/svg/down-arrow.svg';
 
 const items = [
     { value: 'Male' },

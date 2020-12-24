@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Avatar from 'assets/images/user-avatar.png';
+import Avatar from '../../../../assets/images/user-avatar.png';
 
 import {
     AppHeader,

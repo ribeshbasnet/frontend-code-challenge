@@ -11,7 +11,7 @@ import {
     CardBodyText,
 } from './card.styled';
 
-import { ReactComponent as RightArrowSVG } from 'assets/svg/right-arrow.svg';
+import { ReactComponent as RightArrowSVG } from '../../../assets/svg/right-arrow.svg';
 
 const Card: FC<{
     icon: string;

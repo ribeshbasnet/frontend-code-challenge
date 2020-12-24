@@ -1,5 +1,8 @@
 import React, { FC, useState } from 'react';
 import styled from '@emotion/styled';
+
+import Sidebar from '../lib/sketch/sidebar';
+import Main from '../lib/sketch/main';
  
 
 const MobileHeader = styled.div`
@@ -46,21 +49,44 @@ const MobileMenu = styled.button`
     }
 `;
 
-const App:FC = () => {
-
+const App: FC = () => {
     const [mblMenuActive, setmblMenuActive] = useState(false);
+
+    const showSidebar = () => {
+        setmblMenuActive(!mblMenuActive);
+    };
 
     return (
         <div className="app-container">
             <MobileHeader>
-            <div className="mobile-menu-btn">
-                
+                <div className="mobile-menu-btn">
+                    <MobileMenu
+                        className={`mobile-menu ${
+                            mblMenuActive ? 'active-menu' : ''
+                        }`}
+                        onClick={() => showSidebar()}
+                    >
+                        <svg viewBox="0 0 100 80" width="25" height="25">
+                            <rect width="100" height="15" rx="8"></rect>
+                            <rect y="30" width="100" height="15" rx="8"></rect>
+                            <rect y="60" width="100" height="15" rx="8"></rect>
+                        </svg>
+                    </MobileMenu>
                 </div>
-
+                <div className="mobile-cta">
+                    <button
+                        type="button"
+                        className="btn btn-dark find-gym-button"
+                    >
+                        <span>Find A Gym Club</span>
+                    </button>
+                </div>
             </MobileHeader>
+            <Sidebar isMenuActive={mblMenuActive} />
+            <Main />
         </div>
     );
-
 };
+
 
 export default App;

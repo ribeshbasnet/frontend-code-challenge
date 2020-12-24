@@ -10,7 +10,7 @@ import {
     ReferFormBannerMedia,
 } from './referral.styled';
 
-import { ReactComponent as ReferralSVG } from 'assets/svg/referral.svg';
+import { ReactComponent as ReferralSVG } from '../../../../../assets/svg/referral.svg';
 
 const Referral: FC = () => {
     return (
